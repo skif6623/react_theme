@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 import { Button } from '../Button/Button';
+import {
+  IoAddCircleOutline,
+  IoAirplaneOutline,
+  IoArchiveOutline,
+} from 'react-icons/io5';
 
 const Text = styled.p`
   color: ${p => p.theme.colors.text};
@@ -13,13 +18,10 @@ function App() {
   return (
     <>
       <Text>Доброго вечора. Ми з України!!!!</Text>
-      <Button>Пошук</Button>
-      <Button>Фільтр</Button>
-      <Button>Вікно</Button>
+      <Button icon={IoAddCircleOutline}>Пошук</Button>
+      <Button icon={IoAirplaneOutline}>Фільтр</Button>
+      <Button icon={IoArchiveOutline}>Вікно</Button>
       <Button type="submit">Вхід</Button>
-      <Button type="submit" disabled>
-        Вхід
-      </Button>
     </>
   );
 }
