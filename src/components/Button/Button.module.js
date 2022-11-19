@@ -8,12 +8,13 @@ export const ButtonStyled = styled.button`
   padding-right: ${p => p.theme.space[4]}px;
   border: ${p => p.theme.borders.normal};
   border-radius: ${p => p.theme.radii.normal};
-  background-color: ${p => p.theme.colors.primary};
+  background-color: ${p =>
+    p.disabled ? p.theme.colors.muted : p.theme.colors.primary};
   color: ${p => p.theme.colors.muted};
   cursor: pointer;
 
-  :hover,
-  :focus {
+  :hover:not(:disabled),
+  :focus:not(:disabled) {
     background-color: ${p => p.theme.colors.secondary};
   }
 `;

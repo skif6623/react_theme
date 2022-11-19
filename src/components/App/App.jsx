@@ -17,6 +17,9 @@ function App() {
       <Button>Фільтр</Button>
       <Button>Вікно</Button>
       <Button type="submit">Вхід</Button>
+      <Button type="submit" disabled>
+        Вхід
+      </Button>
     </>
   );
 }
