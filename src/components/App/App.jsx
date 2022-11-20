@@ -5,7 +5,7 @@ import {
   IoAirplaneOutline,
   IoArchiveOutline,
 } from 'react-icons/io5';
-import Box from '../Box/Box';
+import { Box } from '../Box/Box';
 
 const Text = styled.p`
   color: ${p => p.theme.colors.text};
@@ -17,7 +17,16 @@ const Text = styled.p`
 
 function App() {
   return (
-    <Box bg="tomato">
+    <Box
+      bg="tomato"
+      color="red"
+      p={5}
+      m={0}
+      width="50%"
+      display="flex"
+      alignItems="center"
+      as="main"
+    >
       <Text>Доброго вечора. Ми з України!!!!</Text>
       <Button icon={IoAddCircleOutline}>Пошук</Button>
       <Button icon={IoAirplaneOutline}>Фільтр</Button>

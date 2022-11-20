@@ -1,8 +1,4 @@
 import styled from '@emotion/styled';
-import { color } from 'styled-system';
+import { color, space, layout, flexbox } from 'styled-system';
 
-export const Box = styled.div`
-  ${color}
-`;
-
-export default Box;
+export const Box = styled('div')(color, space, layout, flexbox);
