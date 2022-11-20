@@ -8,7 +8,7 @@ export const Button = ({
 }) => {
   return (
     <ButtonStyled disabled={disabled} type={type}>
-      {Icon && <Icon />}
+      {Icon && <Icon size="16" />}
       {children}
     </ButtonStyled>
   );
