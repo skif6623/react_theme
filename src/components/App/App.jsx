@@ -18,7 +18,7 @@ const Text = styled.p`
 function App() {
   return (
     <Box
-      bg="tomato"
+      bg="skyblue"
       color="red"
       p={5}
       m={0}
