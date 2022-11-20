@@ -23,7 +23,7 @@ function App() {
       p={5}
       m={0}
       width="50%"
-      display="flex"
+      disp
       alignItems="center"
       as="main"
     >
